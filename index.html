@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+      <div class="todoWrapper">
+        <div class="header">
+          <div class="image">
+            <img src="media/character.png" alt="entertainment" id="image1" />
+          </div>
+          <h1>My To Do List</h1>
+          <div class="image">
+            <img src="media/character.png" alt="entertainment" id="image2" />
+          </div>
+        </div>
+
+        <form id="form" class="todoForm" onsubmit="newElement(event)">
+          <label for="addTodo">
+            <input
+              type="text"
+              name="addTodo"
+              id="addTodo"
+              placeholder="Add your Task..."
+            />
+            <button onclick="newElement(event)" class="addButton">ADD</button>
+          </label>
+        </form>
+        <ul id="todoList">
+          <li class="checked">Go for a run</li>
+          <li>Grocery Shopping</li>
+          <li>Take an online course</li>
+          <li>Organize Closet</li>
+          <li>Read a book</li>
+          <li>Pay bills</li>
+        </ul>
+        
+      </div>
+      <div class="iframe left" id="leftIframe">
+        <iframe 
+        title="New swiftXR Project" 
+        frameborder="0" 
+        allowfullscreen 
+        mozallowfullscreen="true" 
+        webkitallowfullscreen="true" 
+        allow="fullscreen; autoplay; xr-spatial-tracking; camera; midi; encrypted-media" execution-while-out-of-viewport 
+        execution-while-not-rendered 
+        web-share 
+        width="50%" 
+        height="100%" 
+        src="https://foil-cadmium.swiftxr.app"
+        scrolling = "no"
+        style="border: none;">
+        </iframe>
+    </div>
+
+    <div class="iframe right" id="rightIframe">
+      <iframe 
+      title="New swiftXR Project" 
+      frameborder="0" 
+      allowfullscreen 
+      mozallowfullscreen="true" 
+      webkitallowfullscreen="true" 
+      allow="fullscreen; autoplay; xr-spatial-tracking; camera; midi; encrypted-media" execution-while-out-of-viewport 
+      execution-while-not-rendered 
+      web-share 
+      width="50%" 
+      height="50%" 
+      src="https://foil-cadmium.swiftxr.app"
+      scrolling = "no"
+      style="border: none;">
+      </iframe>
+  </div>
+      
+    <script src="todo.js"></script>
+  </body>
+</html>
